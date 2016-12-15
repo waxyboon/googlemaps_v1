@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Driver
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Home Address</ion-label>
+      <ion-input (click)="goToMapPage('source')" type="text" [(ngModel)]="address" ng-disabled="true"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button (click)="goToSearch()">Search</button>
+
+  <button ion-button (click)="storeSomething()">Store</button>
+
+  <button ion-button (press)="longPressReload()">Reload (Long Press)</button>
+
+  <!--<p>mark: {{mark_coordinate}}</p>
+  <p>curr: {{curr_addr}}</p>
+  <p>add to pass: {{add_to_pass}}</p>-->
+
+</ion-content>

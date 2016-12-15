@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Passenger Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label>Name: {{name}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Contact No: {{contact}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Distance: {{distance}} km</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Address:</ion-label>
+  </ion-item>
+
+  <div id="map">
+    <iframe id="mapframe" [src]="directionLink" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+  <button ion-button (click)="giveRide()" [hidden]="haveRide"  block>Give a Ride</button>
+  <ion-label [hidden]="!haveRide">Trip Completed?</ion-label>
+  <button ion-button (click)="notCompleted()" [hidden]="!haveRide">No</button>
+  <button ion-button (click)="tripCompleted()" [hidden]="!haveRide">Yes</button>
+
+</ion-content>

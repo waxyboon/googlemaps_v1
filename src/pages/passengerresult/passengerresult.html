@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Available Passenger</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div id="list_distance">
+    <p>List from Nearest to Further</p>
+    <ion-list>
+      <!--<ion-item *ngFor="let item of (filteredList | sort); let i = index; trackBy: trackById" (click)="goToDetails()" ng-value="selectedPassenger">{{i+1}}) {{item.name}} {{item.distance}}</ion-item>-->
+      <ion-item *ngFor="let item of (filteredList | sort); let i = index" (click)="goToDetails(item.nid, item.name, item.contact, item.coordinate, item.distance)">{{i+1}}) {{item.name}}</ion-item>
+    </ion-list>
+  </div>
+  <div>
+    <button ion-button (click)="showStored()">Show address</button>
+  </div>
+
+  <p>{{storedaddr}}</p>
+</ion-content>

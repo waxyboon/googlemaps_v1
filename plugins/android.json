@@ -1,0 +1,47 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.testnav355269"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.testnav355269"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.testnav355269"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.testnav355269"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.testnav355269"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.testnav355269"
+        },
+        "plugin.google.maps": {
+            "API_KEY_FOR_ANDROID": "AIzaSyD3G2IAkH_xkmdnwpEVdAecJXa-82I-9f8",
+            "PACKAGE_NAME": "com.ionicframework.testnav355269"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.ionicframework.testnav355269"
+        },
+        "cordova.plugins.diagnostic.api-22": {
+            "PACKAGE_NAME": "com.ionicframework.testnav355269"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.ionicframework.testnav355269"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ionicframework.testnav355269"
+        }
+    }
+}
